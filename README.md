@@ -5,6 +5,8 @@
 **Software:** All data wrangling, cleaning, manipulation, analysis, and visualization is done using R (v. 3.4.3) in the RStudio IDE (v. 1.1.414) using Windows 10. Packahes include, but are not limited to:
 
 * tidyr
+* dplyr
+* readr
 * lubridate
 * stringr
 * gpplot2
