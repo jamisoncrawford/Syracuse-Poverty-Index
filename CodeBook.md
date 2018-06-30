@@ -2,6 +2,8 @@
 
 **Overview:** `CodeBook.md` provides data sources, upstream data pre-processing steps, variable and value transformations, units of analysis, and variable formulas and definitions for the *Syracuse Poverty Index*. 
 
+## Data Nuances
+
 ### Note on Raw Data
 
 The [Central New York Community Foundation](https://cnycf.org/) (CNYCF) does not yet have full permission to host certain raw data comprising the *Syracuse Poverty Index*. The redacted table, `index_v2_redact.csv`, only contains data converted into percentages.
@@ -61,7 +63,7 @@ Data from the *Syracuse Poverty Index* are pulled from the following sources by 
 
 16. `violation_aprc` is the **annual percentage of property parcels with reported housing violations** within a census tract per a combination of annual aggregates of NBD data (2014, 2016) and Department of Code Enforcement maintained by [DataCuse](http://data.syrgov.net/datasets/code-violations) (2017)
 
-## Variable Transformations (Percentages)
+## Variable Transformations
 
 All variable transformations occur in line 186 of thr R script `poverty_index_v2.r` and are explained below. Note: All variables *that are not pre-processed* are converted from percentages by multiple each value by 100.
 
