@@ -18,10 +18,10 @@ All missing values in `index_v2_redact.csv` are indicated by `NA`, the standard 
 
 One in every 55 rows in `index_v2_redact.csv` contains a total of all population, parcel, and percentage variables, as well as the total `index` score for the `date`. All `date` values were converted to the "floor" (first day) of the month. All variables with suffix `*prc` have prefixes representing the interval in which they are collected.
 
-* `tprc` indicates an all-time aggregate percentage
-* `aprc` indicates an annual aggregate percentage
-* `qprc` indicates a quarterly aggregate percentage
-* `mprc` indicates a monthly aggregate percentage
+* `tprc` indicates an all-time aggregation
+* `aprc` indicates an annual aggregation
+* `qprc` indicates a quarterly aggregation
+* `mprc` indicates a monthly aggregation
 
 To accomodate the monthly breakdown in `index_v2_redact.csv`, `qprc` (quarterly) values are replicated across 3 months and `aprc` (annual) values are replicated across 12 months. 
 
