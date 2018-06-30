@@ -189,7 +189,7 @@ tidy <- tidy %>%
            ela_fail_aprc     = round(fela, 3 ),
            larceny_mprc      = round(larc / (tpop / 1000), 3) * 100,
            lead_aprc         = round(lead / prop, 3) * 100,
-           unfit_aprc        = round(nfit / prop, 3) * 100,
+           unfit_tprc        = round(nfit / prop, 3) * 100,
            wages_qprc        = round((12012 - qcew) / 12012, 3) * 100,
            ta_case_mprc      = round(tac / wpop, 3) * 100,
            ta_inds_mprc      = round(tai / wpop, 3) * 100,
@@ -203,7 +203,7 @@ for( i in seq_along(tidy$wages_qprc)){
 
 tidy <- tidy %>% rowwise() %>%
     mutate(index = round(sum(child_lead_aprc, crime_mprc, ela_fail_aprc,
-                             larceny_mprc, lead_aprc, unfit_aprc, wages_qprc, 
+                             larceny_mprc, lead_aprc, unfit_tprc, wages_qprc, 
                              ta_case_mprc, ta_inds_mprc, unemployment_mprc,
                              vacancy_aprc, violation_aprc,
                              na.rm = TRUE ), 3 ))
