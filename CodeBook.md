@@ -78,15 +78,15 @@ All variable transformations occur in line 186 of thr R script `poverty_index_v2
 
 5. `lead_aprc` or **annual percentage of property parcels with reported lead violations** is calculated by dividing aggregated annual reports of tract lead violations, `lead` by total tract property parcels, `prop`.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{annual\:&space;tract\:&space;lead\:&space;violations}{(\:&space;total\:&space;parcels\:&space;)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{annual\:&space;tract\:&space;lead\:&space;violations}{(\:&space;total\:&space;parcels\:&space;)}" title="\frac{annual\: tract\: lead\: violations}{(\: total\: parcels\: )}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{annual\:&space;tract\:&space;lead\:&space;violations}{\:&space;total\:&space;parcels\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{annual\:&space;tract\:&space;lead\:&space;violations}{\:&space;total\:&space;parcels\:&space;}" title="\frac{annual\: tract\: lead\: violations}{\: total\: parcels\: }" /></a>
 
 6. `unfit_aprc` or **total percentage of property parcels declared "unfit"** is calculated by dividing all-time aggregated declarations of unfit housing in tract, `nfit`, by total tract property parcels, `prop`.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{total\:&space;tract\:&space;houses\:&space;declared\:&space;unfit}{(\:&space;total\:&space;tract&space;\:&space;parcels\:&space;)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{total\:&space;tract\:&space;houses\:&space;declared\:&space;unfit}{(\:&space;total\:&space;tract&space;\:&space;parcels\:&space;)}" title="\frac{total\: tract\: houses\: declared\: unfit}{(\: total\: tract \: parcels\: )}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{total\:&space;tract\:&space;houses\:&space;declared\:&space;unfit}{\:&space;total\:&space;tract&space;\:&space;parcels\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{total\:&space;tract\:&space;houses\:&space;declared\:&space;unfit}{\:&space;total\:&space;tract&space;\:&space;parcels\:&space;}" title="\frac{total\: tract\: houses\: declared\: unfit}{\: total\: tract \: parcels\: }" /></a>
 
 7. `wages_qprc` or **quarterly percent difference in average disbursed tract wage to average earned county wage** is calculated by subtracting the quarterly average wages disbursed in tract, `qcew`, from the average quarterly pre-tax earnings in Onondaga County, $12,012. The difference is again divided by average quarterly pre-tax earnings, $12,012, to determine percent difference. All negative differences (i.e. tracts with above-average disbursed wages) are replaced with "0".
 
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbb{R_\geq&space;}_0=\frac{(\:&space;12,012\:&space;-&space;\:&space;quarterly&space;\:&space;average&space;\:&space;tract\:&space;wages\:&space;disbursed\:&space;)}{12,2012}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbb{R_\geq&space;}_0=\frac{(\:&space;12,012\:&space;-&space;\:&space;quarterly&space;\:&space;average&space;\:&space;tract\:&space;wages\:&space;disbursed\:&space;)}{12,2012}" title="\mathbb{R_\geq }_0=\frac{(\: 12,012\: - \: quarterly \: average \: tract\: wages\: disbursed\: )}{12,2012}" /></a>
 
 8. `ta_case_mprc` or **monthly percentage of temporary assistance cases among workforce** is calculated by dividing the monthly total of temporary assistance cases by tract, `tac`, by total workforce population in tract, `wpop`.
 
