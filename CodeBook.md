@@ -23,7 +23,7 @@ One in every 55 rows in `index_v2_redact.csv` contains a total of all population
 * `qprc` indicates a quarterly aggregation
 * `mprc` indicates a monthly aggregation
 
-To accomodate the monthly breakdown in `index_v2_redact.csv`, `qprc` (quarterly) values are replicated across 3 months and `aprc` (annual) values are replicated across 12 months. 
+To accomodate the monthly breakdown in `index_v2_redact.csv`, `qprc` (quarterly) values are replicated across 3 months, `aprc` (annual) values are replicated across 12 months, and `tprc` (all-time) are replicated across all months in the *Index*.
 
 ## Variable Descriptions & Sources
 
