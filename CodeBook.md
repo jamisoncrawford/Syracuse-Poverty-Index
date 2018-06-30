@@ -66,7 +66,7 @@ All variable transformations occur in line 186 of thr R script `poverty_index_v2
 
 1. `child_lead_aprc` or **annual percentage of children with lead poisoning** is pre-calculated by OCHD upstream as the proportion of total children (under 18 years of age) in each tract with reportedly toxic levels of lead.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\;&space;tract\;&space;crimes}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\;&space;tract\;&space;crimes}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" title="\frac{monthly\; tract\; crimes}{(\: population\: / \: 1,000\: )}" /></a>
+<center><a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\;&space;tract\;&space;crimes}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\;&space;tract\;&space;crimes}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" title="\frac{monthly\; tract\; crimes}{(\: population\: / \: 1,000\: )}" /></a></center>
 
 2. `crime_mprc` or **monthly per capita reported Type 1 crimes exlcuding larceny** is calculated by dividing monthly reports of Type 1 tract crime excluding larceny, `crim`, by the total tract population, `tpop`, over 1,000 for per capita values.
 
