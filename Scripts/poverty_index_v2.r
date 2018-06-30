@@ -190,7 +190,7 @@ tidy <- tidy %>%
            larceny_mprc      = round(larc / (tpop / 1000), 3) * 100,
            lead_aprc         = round(lead / prop, 3) * 100,
            unfit_aprc        = round(nfit / prop, 3) * 100,
-           wages_qprc        = round((11453 - qcew) / 12012, 3) * 100,
+           wages_qprc        = round((12012 - qcew) / 12012, 3) * 100,
            ta_case_mprc      = round(tac / wpop, 3) * 100,
            ta_inds_mprc      = round(tai / wpop, 3) * 100,
            unemployment_mprc = round(uib / wpop, 3) * 100,
