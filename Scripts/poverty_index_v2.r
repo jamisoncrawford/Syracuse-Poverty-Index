@@ -211,6 +211,8 @@ tidy <- tidy %>% rowwise() %>%
 #--------------------------------------------------------------#
 # WRITE TO .CSV
 
+tidy$date <- as.character(tidy$date)
+
 write_csv(tidy, "~/CNYCF/Poverty Index/Percentage Protoype/index_v2.csv")
 
 tidy %>% select(date:prop, child_lead_aprc:index) %>%
