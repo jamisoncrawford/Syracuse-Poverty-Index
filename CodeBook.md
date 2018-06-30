@@ -90,7 +90,7 @@ All variable transformations occur in line 186 of thr R script `poverty_index_v2
 
 8. `ta_case_mprc` or **monthly percentage of temporary assistance cases among workforce** is calculated by dividing the monthly total of temporary assistance cases by tract, `tac`, by total workforce population in tract, `wpop`.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\:&space;tract\:&space;temporary\:&space;assistance\:&space;cases}{(\:&space;total\:&space;tract&space;\:&space;workforce\:&space;)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\:&space;tract\:&space;temporary\:&space;assistance\:&space;cases}{(\:&space;total\:&space;tract&space;\:&space;workforce\:&space;)}" title="\frac{monthly\: tract\: temporary\: assistance\: cases}{(\: total\: tract \: workforce\: )}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\:&space;tract\:&space;temporary\:&space;assistance\:&space;cases}{\:&space;total\:&space;tract&space;\:&space;workforce\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\:&space;tract\:&space;temporary\:&space;assistance\:&space;cases}{\:&space;total\:&space;tract&space;\:&space;workforce\:&space;}" title="\frac{monthly\: tract\: temporary\: assistance\: cases}{\: total\: tract \: workforce\: }" /></a>
 
 9. `ta_inds_mprc` or **monthly percentage of individuals on temporary assistance among workforce** is calculated by dividing the monthly total of temporary assistance beneficiaries by tract, `tai`, by total workforce population in tract, `wpop`.
 
