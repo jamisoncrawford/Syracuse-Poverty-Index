@@ -66,17 +66,23 @@ All variable transformations occur in line 186 of thr R script `poverty_index_v2
 
 1. `child_lead_aprc` or **annual percentage of children with lead poisoning** is pre-calculated by OCHD upstream as the proportion of total children (under 18 years of age) in each tract with reportedly toxic levels of lead.
 
-<center><a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\;&space;tract\;&space;crimes}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\;&space;tract\;&space;crimes}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" title="\frac{monthly\; tract\; crimes}{(\: population\: / \: 1,000\: )}" /></a></center>
-
 2. `crime_mprc` or **monthly per capita reported Type 1 crimes exlcuding larceny** is calculated by dividing monthly reports of Type 1 tract crime excluding larceny, `crim`, by the total tract population, `tpop`, over 1,000 for per capita values.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\;&space;tract\;&space;crimes}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\;&space;tract\;&space;crimes}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" title="\frac{monthly\; tract\; crimes}{(\: population\: / \: 1,000\: )}" /></a>
 
 3. `ela_fail_aprc` or **annual percentage of children failing third-grade ELA exam** is pre-calculated by SCSD upstream as the proportion of total thrid-grade students within each tract who failed the Grade 3 ELA (English Language Arts) exam.
 
 4. `larceny_mprc` is the **monthly per capita reported larceny** is calculated by dividing monthly reports of tract larceny, `larc`, by the total tract population, `tpop`, over 1,000 for per capita values.
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\;&space;tract\;&space;larceny}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\;&space;tract\;&space;larceny}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" title="\frac{monthly\; tract\; larceny}{(\: population\: / \: 1,000\: )}" /></a>
+
 5. `lead_aprc` or **annual percentage of property parcels with reported lead violations** is calculated by dividing aggregated annual reports of tract lead violations, `lead` by total tract property parcels, `prop`.
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{tract\:&space;lead\:&space;violations}{(\:&space;total\:&space;parcels\:&space;)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{tract\:&space;lead\:&space;violations}{(\:&space;total\:&space;parcels\:&space;)}" title="\frac{tract\: lead\: violations}{(\: total\: parcels\: )}" /></a>
+
 6. `unfit_aprc` or **total percentage of property parcels declared "unfit"** is calculated by dividing all-time aggregated declarations of unfit housing in tract, `nfit`, by total tract property parcels, `prop`.
+
+
 
 7. `wages_qprc` or **quarterly percent difference in average disbursed tract wage to average earned county wage** is calculated by subtracting the quarterly average wages disbursed in tract, `qcew`, from the average quarterly pre-tax earnings in Onondaga County, $12,012. The difference is again divided by average quarterly pre-tax earnings, $12,012, to determine percent difference. All negative differences (i.e. tracts with above-average disbursed wages) are replaced with "0".
 
