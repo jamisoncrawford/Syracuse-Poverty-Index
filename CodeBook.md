@@ -18,6 +18,7 @@ All missing values in `index_v2_redact.csv` are indicated by `NA`, the standard 
 
 One in every 55 rows in `index_v2_redact.csv` contains a total of all population, parcel, and percentage variables, as well as the total `index` score for the `date`. All `date` values were converted to the "floor" (first day) of the month. All variables with suffix `*prc` have prefixes representing the interval in which they are collected.
 
+* `tprc` indicates an all-time aggregate percentage
 * `aprc` indicates an annual aggregate percentage
 * `qprc` indicates a quarterly aggregate percentage
 * `mprc` indicates a monthly aggregate percentage
@@ -46,7 +47,7 @@ Data from the *Syracuse Poverty Index* are pulled from the following sources by 
 
 9. `lead_aprc` is the **annual percentage of property parcels with reported lead violations** within a census tract as reported by OCHD and maintained in *Syracuse Open Data*, or [DataCuse](http://data.syrgov.net/datasets/lead-violations) (2017)
 
-10. `unfit_aprc` is the **total percentage of property parcels declared "unfit"** within a census tract as reported by the Syracuse Department of Code Enforcement and maintained in [DataCuse](http://data.syrgov.net/datasets/unfit-properties) (2014-Present)
+10. `unfit_tprc` is the **total percentage of property parcels declared "unfit"** within a census tract as reported by the Syracuse Department of Code Enforcement and maintained in [DataCuse](http://data.syrgov.net/datasets/unfit-properties) (2014-Present)
 
 11. `wages_qprc` is the **quarterly percent difference in average disbursed tract wage to average earned county wage** per US Department of Labor (DOL) Quarterly Census of Wages and Employment (QCEW); notably, CNYCF purchases tract-level data from the DOL, though less granular albeit Open QCEW Data is available in the [DOL QCEW Database](https://www.bls.gov/cew/) (Q3, 2016-Q4, 2017)
 
@@ -80,7 +81,7 @@ All variable transformations occur in line 186 of thr R script `poverty_index_v2
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{annual\:&space;tract\:&space;lead\:&space;violations}{\:&space;total\:&space;parcels\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{annual\:&space;tract\:&space;lead\:&space;violations}{\:&space;total\:&space;parcels\:&space;}" title="\frac{annual\: tract\: lead\: violations}{\: total\: parcels\: }" /></a>
 
-6. `unfit_aprc` or **total percentage of property parcels declared "unfit"** is calculated by dividing all-time aggregated declarations of unfit housing in tract, `nfit`, by total tract property parcels, `prop`.
+6. `unfit_tprc` or **total percentage of property parcels declared "unfit"** is calculated by dividing all-time aggregated declarations of unfit housing in tract, `nfit`, by total tract property parcels, `prop`.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{total\:&space;tract\:&space;houses\:&space;declared\:&space;unfit}{\:&space;total\:&space;tract&space;\:&space;parcels\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{total\:&space;tract\:&space;houses\:&space;declared\:&space;unfit}{\:&space;total\:&space;tract&space;\:&space;parcels\:&space;}" title="\frac{total\: tract\: houses\: declared\: unfit}{\: total\: tract \: parcels\: }" /></a>
 
