@@ -8,7 +8,11 @@ The [Central New York Community Foundation](cnycf.org) (CNYCF) does not yet have
 
 ### Missing Values
 
-All missing values in `index_v2_redact.csv` are indicated by `NA`, the standard for missing values in the R language. The analyst has taken several measures described herein to ensure that true missing values are distinct from "0" values.
+All missing values in `index_v2_redact.csv` are indicated by `NA`, the standard for missing values in the R language. The analyst has taken several measures described herein to ensure that true missing values are distinct from "0" values:
+
+* Missing `geoid` values are inserted during pre-processing, with `count` values set to "0".
+* Merged data are checked against a data frame of true `NA` values to ensure true `NA` and true "0" values after transposition
+* `NA` values in `crim` and `larc` variables are replaced with "0" prior to transforming to percentages in variables `crime_mprc` and `larceny_mprc`, respectively
 
 ### Monthly Totals & Time Intervals
 
