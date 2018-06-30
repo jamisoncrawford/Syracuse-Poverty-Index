@@ -1,4 +1,4 @@
-date,geoid,tpop,apop,wpop,prop,child_lead_aprc,crime_mprc,ela_fail_aprc,larceny_mprc,lead_aprc,unfit_aprc,wages_qprc,ta_case_mprc,ta_inds_mprc,unemployment_mprc,vacancy_aprc,violation_aprc,index
+date,geoid,tpop,apop,wpop,prop,child_lead_aprc,crime_mprc,ela_fail_aprc,larceny_mprc,lead_aprc,unfit_tprc,wages_qprc,ta_case_mprc,ta_inds_mprc,unemployment_mprc,vacancy_aprc,violation_aprc,index
 2014-01-01,36067000100,644,448,352,53,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,1.9,3.8,5.7
 2014-01-01,36067000200,3042,1919,1370,842,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,5.5,15.8,21.3
 2014-01-01,36067000300,1635,1048,778,527,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,2.1,0.8999999999999999,3
