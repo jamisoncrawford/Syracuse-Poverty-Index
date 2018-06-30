@@ -1,6 +1,6 @@
 # Syracuse Poverty Index: Code Book
 
-**Overview:** `CodeBook.md` provides data sources, upstream data pre-processing steps, variable and value transformations, and variable formulas and definitions for the *Syracuse Poverty Index*. 
+**Overview:** `CodeBook.md` provides data sources, upstream data pre-processing steps, variable and value transformations, units of analysis, and variable formulas and definitions for the *Syracuse Poverty Index*. 
 
 ### Note on Raw Data
 
