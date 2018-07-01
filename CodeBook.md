@@ -70,43 +70,63 @@ All variable transformations occur in line 186 of thr R script `poverty_index_v2
 1. `child_lead_aprc` or **annual percentage of children with lead poisoning** is pre-calculated by OCHD upstream as the proportion of total children (under 18 years of age) in each tract with reportedly toxic levels of lead.
 
 2. `crime_mprc` or **monthly per capita reported Type 1 crimes exlcuding larceny** is calculated by dividing monthly reports of Type 1 tract crime excluding larceny, `crim`, by the total tract population, `tpop`, over 1,000 for per capita values.
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\;&space;tract\;&space;crimes}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\;&space;tract\;&space;crimes}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" title="\frac{monthly\; tract\; crimes}{(\: population\: / \: 1,000\: )}" /></a>
+ 
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bmonthly%5C%3B%20tract%5C%3B%20crime%7D%7B%28%5C%3A%20tract%20%5C%3A%20population%5C%3A%20/%20%5C%3A%201%2C000%5C%3A%20%29%7D" />
+</p>
 
 3. `ela_fail_aprc` or **annual percentage of children failing third-grade ELA exam** is pre-calculated by SCSD upstream as the proportion of total thrid-grade students within each tract who failed the Grade 3 ELA (English Language Arts) exam.
 
 4. `larceny_mprc` is the **monthly per capita reported larceny** is calculated by dividing monthly reports of tract larceny, `larc`, by the total tract population, `tpop`, over 1,000 for per capita values.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\;&space;tract\;&space;larceny}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\;&space;tract\;&space;larceny}{(\:&space;population\:&space;/&space;\:&space;1,000\:&space;)}" title="\frac{monthly\; tract\; larceny}{(\: population\: / \: 1,000\: )}" /></a>
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bmonthly%5C%3B%20tract%5C%3B%20larceny%7D%7B%28%5C%3A%20tract%20%5C%3A%20population%5C%3A%20/%20%5C%3A%201%2C000%5C%3A%20%29%7D" />
+</p>
 
 5. `lead_aprc` or **annual percentage of property parcels with reported lead violations** is calculated by dividing aggregated annual reports of tract lead violations, `lead` by total tract property parcels, `prop`.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{annual\:&space;tract\:&space;lead\:&space;violations}{\:&space;total\:&space;parcels\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{annual\:&space;tract\:&space;lead\:&space;violations}{\:&space;total\:&space;parcels\:&space;}" title="\frac{annual\: tract\: lead\: violations}{\: total\: parcels\: }" /></a>
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bannual%5C%3A%20tract%5C%3A%20lead%5C%3A%20violations%7D%7B%5C%3A%20total%5C%3A%20tract%5C%3A%20parcels%5C%3A%20%7D" />
+</p>
 
 6. `unfit_tprc` or **total percentage of property parcels declared "unfit"** is calculated by dividing all-time aggregated declarations of unfit housing in tract, `nfit`, by total tract property parcels, `prop`.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{total\:&space;tract\:&space;houses\:&space;declared\:&space;unfit}{\:&space;total\:&space;tract&space;\:&space;parcels\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{total\:&space;tract\:&space;houses\:&space;declared\:&space;unfit}{\:&space;total\:&space;tract&space;\:&space;parcels\:&space;}" title="\frac{total\: tract\: houses\: declared\: unfit}{\: total\: tract \: parcels\: }" /></a>
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Btotal%5C%3A%20tract%5C%3A%20houses%5C%3A%20declared%5C%3A%20unfit%7D%7B%5C%3A%20total%5C%3A%20tract%20%5C%3A%20parcels%5C%3A%20%7D" />
+</p>
 
 7. `wages_qprc` or **quarterly percent difference in average disbursed tract wage to average earned county wage** is calculated by subtracting the quarterly average wages disbursed in tract, `qcew`, from the average quarterly pre-tax earnings in Onondaga County, $12,012. The difference is again divided by average quarterly pre-tax earnings, $12,012, to determine percent difference. All negative differences (i.e. tracts with above-average disbursed wages) are replaced with "0".
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbb{R_\geq&space;}_0=\frac{(\:&space;quarterly&space;\:&space;average\:&space;county\:&space;wages\:&space;-&space;\:&space;quarterly&space;\:&space;average&space;\:&space;tract\:&space;wages\:&space;disbursed\:&space;)}{quarterly&space;\:&space;average\:&space;county\:&space;wages}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbb{R_\geq&space;}_0=\frac{(\:&space;quarterly&space;\:&space;average\:&space;county\:&space;wages\:&space;-&space;\:&space;quarterly&space;\:&space;average&space;\:&space;tract\:&space;wages\:&space;disbursed\:&space;)}{quarterly&space;\:&space;average\:&space;county\:&space;wages}" title="\mathbb{R_\geq }_0=\frac{(\: quarterly \: average\: county\: wages\: - \: quarterly \: average \: tract\: wages\: disbursed\: )}{quarterly \: average\: county\: wages}" /></a>
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cmathbb%7BR_%5Cgeq%20%7D_0%3D%5Cfrac%7B%28%5C%3A%20quarterly%20%5C%3A%20average%5C%3A%20county%5C%3A%20wages%5C%3A%20earned%5C%3A%20-%20%5C%3A%20quarterly%20%5C%3A%20average%20%5C%3A%20tract%5C%3A%20wages%5C%3A%20disbursed%5C%3A%20%29%7D%7Bquarterly%20%5C%3A%20average%5C%3A%20county%5C%3A%20wages%7D" />
+</p>
 
 8. `ta_case_mprc` or **monthly percentage of temporary assistance cases among workforce** is calculated by dividing the monthly total of temporary assistance cases by tract, `tac`, by total workforce population in tract, `wpop`.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\:&space;tract\:&space;temporary\:&space;assistance\:&space;cases}{\:&space;total\:&space;tract&space;\:&space;workforce\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\:&space;tract\:&space;temporary\:&space;assistance\:&space;cases}{\:&space;total\:&space;tract&space;\:&space;workforce\:&space;}" title="\frac{monthly\: tract\: temporary\: assistance\: cases}{\: total\: tract \: workforce\: }" /></a>
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bmonthly%5C%3A%20tract%5C%3A%20temporary%5C%3A%20assistance%5C%3A%20cases%7D%7B%5C%3A%20total%5C%3A%20tract%20%5C%3A%20workforce%5C%3A%20%7D" />
+</p>
 
 9. `ta_inds_mprc` or **monthly percentage of individuals on temporary assistance among workforce** is calculated by dividing the monthly total of temporary assistance beneficiaries by tract, `tai`, by total workforce population in tract, `wpop`.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\:&space;tract\:&space;temporary\:&space;assistance\:&space;individuals}{\:&space;total\:&space;tract&space;\:&space;workforce\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\:&space;tract\:&space;temporary\:&space;assistance\:&space;individuals}{\:&space;total\:&space;tract&space;\:&space;workforce\:&space;}" title="\frac{monthly\: tract\: temporary\: assistance\: individuals}{\: total\: tract \: workforce\: }" /></a>
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bmonthly%5C%3A%20tract%5C%3A%20temporary%5C%3A%20assistance%5C%3A%20individuals%7D%7B%5C%3A%20total%5C%3A%20tract%20%5C%3A%20workforce%5C%3A%20%7D" />
+</p>
 
 10. `unemployment_mprc` or **monthly percentage of unemployment insurance beneficiaries among workforce** is calculated by dividing the monthly total of unemployment insurance beneficiaries in tract, `uib`, by total workforce population in tract, `wpop`.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{monthly\:&space;tract\:&space;unemployment\:&space;insurance\:&space;beneficiaries}{\:&space;total\:&space;tract&space;\:&space;workforce\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{monthly\:&space;tract\:&space;unemployment\:&space;insurance\:&space;beneficiaries}{\:&space;total\:&space;tract&space;\:&space;workforce\:&space;}" title="\frac{monthly\: tract\: unemployment\: insurance\: beneficiaries}{\: total\: tract \: workforce\: }" /></a>
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bmonthly%5C%3A%20tract%5C%3A%20unemployment%5C%3A%20insurance%5C%3A%20beneficiaries%7D%7B%5C%3A%20total%5C%3A%20tract%20%5C%3A%20workforce%5C%3A%20%7D" />
+</p>
 
 11. `vacancy_aprc` or **annual percentage of property parcels with reported vacancies** is calculated by dividing aggregated annual reported vacant properties in tract, `vac`, by total tract property parcels, `prop`.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{tract\:&space;vacancies\:&space;reported\:&space;annually}{\:&space;total\:&space;tract&space;\:&space;parcels\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{tract\:&space;vacancies\:&space;reported\:&space;annually}{\:&space;total\:&space;tract&space;\:&space;parcels\:&space;}" title="\frac{tract\: vacancies\: reported\: annually}{\: total\: tract \: parcels\: }" /></a>
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bannual%5C%3A%20tract%5C%3A%20vacancies%5C%3A%20reported%7D%7B%5C%3A%20total%5C%3A%20tract%20%5C%3A%20parcels%5C%3A%20%7D" />
+</p>
 
 12. `violation_aprc` or **annual percentage of property parcels with reported housing violations** is calculated by dividing aggregated annual reported housing violations in tract, `viol`, by total tract property parcels, `prop`.
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{tract\:&space;housing\:&space;violations\:&space;reported\:&space;annually}{\:&space;total\:&space;tract&space;\:&space;parcels\:&space;}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{tract\:&space;housing\:&space;violations\:&space;reported\:&space;annually}{\:&space;total\:&space;tract&space;\:&space;parcels\:&space;}" title="\frac{tract\: housing\: violations\: reported\: annually}{\: total\: tract \: parcels\: }" /></a>
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bannual%5C%3A%20tract%5C%3A%20housing%5C%3A%20violations%5C%3A%20reported%7D%7B%5C%3A%20total%5C%3A%20tract%20%5C%3A%20parcels%5C%3A%20%7D" />
+</p>
