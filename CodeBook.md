@@ -2,7 +2,7 @@
 
 **Overview:** `CodeBook.md` provides data sources, upstream data pre-processing steps, variable and value transformations, units of analysis, and variable formulas and definitions for the *Syracuse Poverty Index*. 
 
-## Data Nuances
+## I. Data Nuances
 
 ### Note on Raw Data
 
@@ -27,7 +27,7 @@ One in every 55 rows in `index_v2_redact.csv` contains a total of all population
 
 To accomodate the monthly breakdown in `index_v2_redact.csv`, `qprc` (quarterly) values are replicated across 3 months, `aprc` (annual) values are replicated across 12 months, and `tprc` (all-time) are replicated across all months in the *Index*.
 
-## Variable Descriptions & Sources
+## II. Variable Descriptions & Sources
 
 Data from the *Syracuse Poverty Index* are pulled from the following sources by variable. Refer to `index_v2_redact` to view each variable and its values.
 
@@ -63,7 +63,7 @@ Data from the *Syracuse Poverty Index* are pulled from the following sources by 
 
 16. `violation_aprc` is the **annual percentage of property parcels with reported housing violations** within a census tract per a combination of annual aggregates of NBD data (2014, 2016) and Department of Code Enforcement maintained by [DataCuse](http://data.syrgov.net/datasets/code-violations) (2017)
 
-## Variable Transformations
+## III. Variable Transformations
 
 All variable transformations occur in line 186 of thr R script `poverty_index_v2.r` and are explained below. Note: All variables *that are not pre-processed* are converted from percentages by multiple each value by 100.
 
