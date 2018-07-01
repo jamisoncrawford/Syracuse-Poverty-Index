@@ -4,7 +4,7 @@
 
 ## I. Data Nuances
 
-### Note on Raw Data
+### Raw Data
 
 The [Central New York Community Foundation](https://cnycf.org/) (CNYCF) does not yet have full permission to host certain raw data comprising the *Syracuse Poverty Index*. The redacted table, `index_v2_redact.csv`, only contains data converted into percentages.
 
