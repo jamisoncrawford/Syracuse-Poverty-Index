@@ -120,7 +120,7 @@ All variable transformations occur in line 186 of thr R script `poverty_index_v2
   <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bmonthly%5C%3A%20tract%5C%3A%20unemployment%5C%3A%20insurance%5C%3A%20beneficiaries%7D%7B%5C%3A%20total%5C%3A%20tract%20%5C%3A%20workforce%5C%3A%20%7D" />
 </p>
 
-9. `Parcels with Vacancies` or **annual percentage of property parcels with reported vacancies** is calculated by dividing aggregated and verified vacant structures in tract, `vac`, by total tract properties with structues, `prop`.
+9. `Parcels with Vacancies` or **quarterly percentage of property parcels with reported vacancies** is calculated by dividing aggregated and verified vacant structures in tract, `vac`, by total tract properties with structues, `prop`.
 
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bannual%5C%3A%20tract%5C%3A%20vacancies%5C%3A%20reported%7D%7B%5C%3A%20total%5C%3A%20tract%20%5C%3A%20parcels%5C%3A%20%7D" />
