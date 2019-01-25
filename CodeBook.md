@@ -83,7 +83,7 @@ All variable transformations occur in line 186 of thr R script `poverty_index_v2
 2. `Other Crime per Capita` or **monthly per capita reported Type 1 crimes exlcuding larceny** is calculated by dividing monthly reports of Type I tract crime excluding larceny, `crim`, by the total tract population, `tpop`, over 100 for per capita values.
  
 <p align="center">
-  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bmonthly%5C%3B%20tract%5C%3B%20crime%7D%7B%28%5C%3A%20tract%20%5C%3A%20population%5C%3A%20/%20%5C%3A%2010%5C%3A%20%29%7D" />
+  <img src="https://latex.codecogs.com/gif.latex?%5Cfrac%7Bmonthly%5C%3B%20tract%5C%3B%20crime%7D%7B%28%5C%3A%20tract%20%5C%3A%20population%5C%3A%20/%20%5C%3A%20100%5C%3A%20%29%7D" />
 </p>
 
 3. `G3 ELA Failure Rate` or **annual percentage of children failing third-grade ELA exam** is pre-calculated by SCSD upstream as the proportion of total third-grade students within each tract who performed below grade level in the Grade 3 ELA (English Language Arts) exam.
