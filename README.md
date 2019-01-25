@@ -14,8 +14,9 @@ All cleaning, manipulation, analysis, and visualization is perfromed using R (v.
 The majority of data sources are comprised of partner organizations, e.g. Department of Social Services, Onondaga County Health Department, Syracuse City School District, etc., and while these are largely raw data, they are often structured inconsistenty, or include census tracts outside of Syracuse, NY. Therefore, these data are manually restructured into [Tidy Format](https://vita.had.co.nz/papers/tidy-data.pdf) in *MS Excel 2018*.
 
 * A redacted version of processed, tidy data are available in [Tables](https://github.com/jamisoncrawford/Syracuse-Poverty-Index/tree/master/Tables): `Poverty Index Datasets 0.9.1 - Redacted`
-* The R script for preprocessing Temporary Assistance data (Department of Social Services) is available in [Scripts](https://github.com/jamisoncrawford/Syracuse-Poverty-Index/tree/master/Scripts): `ta_cleaning_script_1.0`
+* The R script for preprocessing DSS (Department of Social Services) data is available in [Scripts](https://github.com/jamisoncrawford/Syracuse-Poverty-Index/tree/master/Scripts): `ta_conversion.r`
 * The R scripts for processing reported Type I crimes may be found in the repository [Syracuse Crime Analysis](https://github.com/jamisoncrawford/Syracuse-Crime-Analysis)
+    - This repository also documents all tasks for reproducibility
 
 ## Contributors
 
