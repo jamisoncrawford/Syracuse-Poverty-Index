@@ -21,6 +21,10 @@ The majority of data sources are comprised of partner organizations, e.g. Depart
 * A redacted final index is provided in [Tables](https://github.com/jamisoncrawford/Syracuse-Poverty-Index/tree/master/Tables) in both long and wide format:
     - Wide (Semi-Tidy): `index_0.9.1_redact.csv`
     - Long (Tidy): `index_0.9.1_tidy.csv`
+    
+## Next Steps
+
+Alternative scoring systems are being explored, while v. 1.0 will debut in a whitepaper c. February, 2019.
 
 ## Contributors
 
