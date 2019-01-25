@@ -17,6 +17,10 @@ The majority of data sources are comprised of partner organizations, e.g. Depart
 * The R script for preprocessing DSS (Department of Social Services) data is available in [Scripts](https://github.com/jamisoncrawford/Syracuse-Poverty-Index/tree/master/Scripts): `ta_conversion.r`
 * The R scripts for processing reported Type I crimes may be found in the repository [Syracuse Crime Analysis](https://github.com/jamisoncrawford/Syracuse-Crime-Analysis)
     - This repository also documents all tasks for reproducibility
+* The final scoring script, `poverty_index_0.9.1.r`, merges and restructures all data sources (see [Scripts](https://github.com/jamisoncrawford/Syracuse-Poverty-Index/tree/master/Scripts))
+* A redacted final index is provided in [Tables](https://github.com/jamisoncrawford/Syracuse-Poverty-Index/tree/master/Tables) in both long and wide format:
+    - Wide (Semi-Tidy): `index_0.9.1_redact.csv`
+    - Long (Tidy): `index_0.9.1_tidy.csv`
 
 ## Contributors
 
