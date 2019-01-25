@@ -10,7 +10,7 @@ The [Central New York Community Foundation](https://cnycf.org/) (CNYCF) does not
 
 ### Missing Values
 
-All missing values in `index_v7.1_redact.csv` are indicated by `NA`, the standard for missing values in the R language. The analyst has taken several measures described herein to ensure that true missing values are distinct from "0" values:
+All missing values in `index_0.9.1_redact.csv` are indicated by `NA`, the standard for missing values in the R language. The analyst has taken several measures described herein to ensure that true missing values are distinct from "0" values:
 
 * Missing `geoid` values are inserted during pre-processing, with `count` values set to "0".
 * Merged data are checked against a data frame of true `NA` values to ensure true `NA` and true "0" values after transposition
@@ -18,22 +18,26 @@ All missing values in `index_v7.1_redact.csv` are indicated by `NA`, the standar
 
 ### Monthly Totals & Time Intervals
 
-One in every 55 rows in `index_v7.1_redact.csv` contains a total of all population, parcel, and percentage variables, as well as the total `index` score for the `date`. All `date` values were converted to the "floor" (first day) of the month. All variables with suffix `*prc` have prefixes representing the interval in which they are collected.
+One in every 55 rows in `index_0.9.1_redact.csv` contains a total of all population, parcel, and percentage variables, as well as the total `index` score for the `date`. All `date` values were converted to the "floor" (first day) of the month. Original variables with suffix `*prc` have prefixes representing the interval in which they are collected.
 
 * `tprc` indicates an all-time aggregation
 * `aprc` indicates an annual aggregation
 * `qprc` indicates a quarterly aggregation
 * `mprc` indicates a monthly aggregation
 
-To accomodate the monthly breakdown in `index_v2_redact.csv`, `qprc` (quarterly) values are replicated across 3 months, `aprc` (annual) values are replicated across 12 months, and `tprc` (all-time) are replicated across all months in the *Index*.
+These have since been deprecated in final versions, which now have more human-reabable data.
+
+To accomodate the monthly breakdown in `index_0.9.1_redact.csv`, `qprc` (quarterly) values are replicated across 3 months, `aprc` (annual) values are replicated across 12 months, and `tprc` (all-time) are replicated across all months in the *Index*.
 
 ## II. Variable Descriptions & Sources
 
-Data from the *Syracuse Poverty Index* are pulled from the following sources by variable. Refer to `index_v2_redact` to view each variable and its values.
+Data from the *Syracuse Poverty Index* are pulled from the following sources by variable. Refer to `index_0.9.1_redact` to view each variable and its values.
 
 1. `tpop` is the **total population** within a census tract per US Census American Community Survey, or ACS (2015)
+  - Deprecated from `tpop`
 
 2. `apop` is the **total adult population, ages 18-64** within a census tract per US Census ACS (2015)
+  - Deprecated from `apop`
 
 3. `wpop` is the **total population in workforce** within a census tract per US Census ACS (2015)
 
