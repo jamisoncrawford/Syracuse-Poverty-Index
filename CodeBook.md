@@ -34,10 +34,10 @@ To accomodate the monthly breakdown in `index_0.9.1_redact.csv`, `qprc` (quarter
 Data from the *Syracuse Poverty Index* are pulled from the following sources by variable. Refer to `index_0.9.1_redact` to view each variable and its values.
 
 1. `tpop` is the **total population** within a census tract per US Census American Community Survey, or ACS (2015)
-  - Deprecated from `tpop`
+    - Deprecated from `tpop`
 
 2. `apop` is the **total adult population, ages 18-64** within a census tract per US Census ACS (2015)
-  - Deprecated from `apop`
+    - Deprecated from `apop`
 
 3. `wpop` is the **total population in workforce** within a census tract per US Census ACS (2015)
 
